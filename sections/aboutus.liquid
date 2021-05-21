@@ -1,0 +1,63 @@
+<p>BE DIFFERENT - A Studio - {{ section.settings.content }} </p>
+
+<ul>
+<li>Keep Up With What Your Favourite Fashion Icons Are Upto</li>
+<li>Quick Fashion Tip And Tricks</li>
+<li>Updates on What Is Trending and New Product Launches</li>
+<li>Explicit Step-By-Step Beauty Routines From Experts</li>
+<li>Celebrity Confessions And A Look Into Their Lives</li>
+</ul>
+<p> </p>
+{{section.settings.office-image | img_tag}}
+<p>REGISTERED OFFICE ADDRESS</p>
+<p>Buildings Alexa,<br /> Gorgina situated in Tech Village,<br /> Saviyati Village, XYX State – 190722, India</p>
+<p>CIN:V30072AK2007CTP094179                             Telephone: <a href="tel:+918061561999">+91-00-99887766</a></p>
+<p> </p>
+<p>BEST ONLINE SHOPPING SITE IN INDIA FOR FASHION</p>
+<p>Be it clothing, footwear or accessories, Be Different - A offers you the ideal combination of fashion and functionality for men, women and kids. You will realise that the sky is the limit when it comes to the types of outfits that you can purchase for different occasions.</p>
+<ol>
+<li>Smart men’s clothing </li>
+<li>Trendy women’s clothing </li>
+<li>Fashionable footwear </li>
+<li>Stylish accessories </li>
+<li>Fun and frolic </li>
+<li>Beauty begins here</li>
+</ol>
+
+<style>
+ .main-content {
+background : {{ section.settings.about-us-bg-color }};
+color : {{ section.settings.about-us-fg-color }};
+}
+</style>
+
+{% schema %}
+{
+"name": "About Us",
+"settings": [
+{
+"type": "image_picker",
+"id": "office-image",
+"label": "Office image"
+},
+{
+"type": "text",
+"id": "content",
+"label": "Content",
+"default": "THE PERSONALIZED FASHION FEED YOU WOULDN’T WANT TO MISS OUT ON"
+},
+{
+"type": "color",
+"id": "about-us-bg-color",
+"label": "Background color",
+"default": "#D7BABA"
+},
+{
+"type": "color",
+"id": "about-us-fg-color",
+"label": "Foreground color",
+"default": "#000000"
+}
+]
+}
+{% endschema %}
